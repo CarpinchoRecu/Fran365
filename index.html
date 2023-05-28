@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fran-365</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+</head>
+
+<body id="grid">
+    <header class="header">
+        <nav>
+            <div class="title-logo">
+                <a id="logo" class="animate_logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+                <h2>Fran-365</h2>
+            </div>
+            <div class="buttons">
+                <div><a href="./index.html">Inicio</a></div>
+                <div><a href="./pages/contact.html">Stock</a></div>
+            </div>
+        </nav>
+
+        <div id="menu-burger">
+            <div class="menu-btn">
+                <span></span>
+            </div>
+            <div class="offcanvas">
+                <div class="close-btn"></div>
+                <div><a href="./index.html">Inicio</a></div>
+                <div><a href="./pages/contact.html">Stock</a></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+
+        <div class="note">
+            <h2 class="note1">Kiosco 365</h2>
+            <h2 class="note2">Conteos</h2>
+        </div>
+    </header>
+
+    <main id="form" class="main">
+        <div class="formulario">
+            <div>
+                <h2 class="tituloFormulario">Producto</h2>
+                <section id="productosForm"></section>
+            </div>
+            <div>
+                <h2 class="tituloFormulario">Stock Sistema</h2>
+                <section id="sistemaForm"></section>
+            </div>
+            <div>
+                <h2 class="tituloFormulario">Cantidad Deposito</h2>
+                <section id="depositoForm"></section>
+            </div>
+            <div>
+                <h2 class="tituloFormulario">Cantidad Heladeras</h2>
+                <section class="heladeraForm">
+                    <tr>
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                        <input type="number" class="heladera" oninput="calcularStock()">
+                    </tr>
+                </section>
+            </div>
+            <div>
+                <h2 class="tituloFormulario">Diferencia</h2>
+                <section class="diferenciaForm">
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                    <h4 class="diferencia"></h4>
+                </section>
+            </div>
+        </div>    
+    </main>
+
+    <footer class="footer">
+        <div class="reserved">
+            <h2>ALL RIGHT RESERVED</h2>
+            <div class="footer-line"></div>
+        </div>
+        <div class="network">
+            <div>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/logo-tk.jpeg" alt="logo-tk" /></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/iphone_companystore/" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/logo-ig.jpeg" alt="logo-ig" /></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/logo-fb.jpeg" alt="logo-fb" /></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/logo-wp.jpeg" alt="logo-wp" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Formulario Script-->
+    <script src="./scripts/stock.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!--NAV-->
+    <script src="./scripts/UI/nav.js"></script>
+</body>
+
+</html>
