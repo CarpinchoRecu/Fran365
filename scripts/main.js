@@ -41,12 +41,15 @@ function calcularStock() {
 
     if (suma === sistema) {
       diferencias[i].innerHTML = '0';
+      diferencias[i].style.color = '#52e60e';
     } else if (suma < sistema) {
       let diferencia = sistema - suma;
       diferencias[i].innerHTML = '-' + diferencia.toString();
+      diferencias[i].style.color = '#d81414';
     } else {
       let exceso = suma - sistema;
       diferencias[i].innerHTML = '+' + exceso.toString();
+      diferencias[i].style.color = '#5a0aee';
     }
   }
 }
